@@ -12,9 +12,8 @@ public class MyRestController {
 
         OutputObject output = new OutputObject();
         output.setField1(input.getField1());
-        output.setResult("Request recived");
+        output.setResult(String.valueOf((int)(Math.random() * 100)));
         return output;
-
 
     }
 
